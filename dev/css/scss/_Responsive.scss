@@ -1,0 +1,31 @@
+@media (min-width:576px){
+
+}
+@media (min-width:768px) {
+  header{
+    height: 100px;
+    img{
+      padding: 3em!important;
+    }
+  }
+  nav{
+    top: unset!important;
+    position: relative!important;
+    left: 0!important;
+    background: none!important;
+    height: 100%!important;
+    align-items: center;
+    ul{
+      flex-direction:row!important;
+      margin: 0;
+    }
+  }
+  .bg{
+    height: 450px!important;
+    background-position: center!important;
+    background-position-y: bottom!important;
+  }
+  #bars{
+    display: none!important;
+  }
+}

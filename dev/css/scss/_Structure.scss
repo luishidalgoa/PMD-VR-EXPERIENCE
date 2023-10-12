@@ -1,0 +1,101 @@
+.wrapper {
+  background-color: #141414;
+}
+
+
+header {
+  display: flex;
+  height: 50px;
+  gap: 20px;
+
+  img {
+    padding: 5px;
+  }
+
+  #bars {
+    width: 100%;
+    height: 100%;
+    max-width: 30px;
+    margin-left: 10px;
+
+    span {
+      transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      background-color: black;
+    }
+
+    /**
+    Cuando se clicke sobre el #bars se activara esta animación
+     */
+    .bars_active:nth-child(1) {
+      @include bars(45deg, 3px, 7px)
+    }
+
+    .bars_active:nth-child(3) {
+      @include bars(-45deg, -2px, -3px)
+    }
+  }
+
+  nav {
+    position: fixed;
+    height: 100vh;
+    top: 50px;
+    left: -1000px;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    ul {
+      height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      color: white;
+
+      .li-active {
+        background: rgb(255, 255, 255, .7);
+        color: black;
+      }
+
+      li {
+        width: 100%;
+        padding: 2em;
+        cursor: pointer;
+
+        a {
+          text-decoration: none;
+          font-weight: lighter;
+          font-family: 'Times New Roman', Times, serif;
+        }
+      }
+    }
+  }
+}
+
+//Activara la animacion de desplazamiento del nav
+.bars-active {
+  left: 0 !important;
+  width: fit-content !important;
+}
+
+
+
+//------------Footer---------
+footer{
+  position: relative;
+  background: white;
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+}
+
+
+footer{
+  color: white;
+  background-color: #141414;
+  margin-top: -25px;
+  padding-top: 15px;
+  -webkit-clip-path: polygon(0 28px,30% 28px,calc(30% + 96px) 0,calc(70% - 96px) 0,70% 28px,100% 28px,100% 100%,0 100%);
+  clip-path: polygon(0 28px,30% 28px,calc(30% + 96px) 0,calc(70% - 96px) 0,70% 28px,100% 28px,100% 100%,0 100%);
+  .footer-container{
+    margin-top: 20px;
+  }
+}
+

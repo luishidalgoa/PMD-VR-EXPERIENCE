@@ -1,0 +1,19 @@
+.cristal-card{
+    width: fit-content;
+    height: auto;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.bg{
+    padding: 1em;
+    background-image: url(/public/assets/img/Banner.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 250px;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+}
