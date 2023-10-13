@@ -28,4 +28,9 @@
   #bars{
     display: none!important;
   }
+
+  footer{
+    -webkit-clip-path: polygon(0 28px,30% 28px,calc(30% + 96px) 0,calc(70% - 96px) 0,70% 28px,100% 28px,100% 100%,0 100%);
+    clip-path: polygon(0 28px,30% 28px,calc(30% + 96px) 0,calc(70% - 96px) 0,70% 28px,100% 28px,100% 100%,0 100%);
+  }
 }

@@ -31,6 +31,7 @@ header #bars .bars_active:nth-child(3) {
   transform: rotate(-45deg) translate(-2px, -3px);
 }
 header nav {
+  background: rgba(20, 20, 20, 0.65);
   position: fixed;
   height: 100vh;
   top: 50px;
@@ -75,13 +76,19 @@ footer {
 footer {
   color: white;
   background-color: #141414;
-  margin-top: -25px;
   padding-top: 15px;
-  -webkit-clip-path: polygon(0 28px, 30% 28px, calc(30% + 96px) 0, calc(70% - 96px) 0, 70% 28px, 100% 28px, 100% 100%, 0 100%);
-  clip-path: polygon(0 28px, 30% 28px, calc(30% + 96px) 0, calc(70% - 96px) 0, 70% 28px, 100% 28px, 100% 100%, 0 100%);
+  margin-top: -30px;
+  padding-top: 15px;
+  -webkit-clip-path: polygon(0 28px, 30% 28px, calc(30% + 26px) 0, calc(70% - 26px) 0, 70% 28px, 100% 28px, 100% 100%, 0 100%);
+  clip-path: polygon(0 28px, 30% 28px, calc(30% + 26px) 0, calc(70% - 26px) 0, 70% 28px, 100% 28px, 100% 100%, 0 100%);
 }
 footer .footer-container {
-  margin-top: 20px;
+  margin-top: 15px;
+  display: grid;
+  justify-items: center;
+}
+footer i {
+  font-size: 3em;
 }
 
 @media (min-width: 768px) {
@@ -110,6 +117,10 @@ footer .footer-container {
   }
   #bars {
     display: none !important;
+  }
+  footer {
+    -webkit-clip-path: polygon(0 28px, 30% 28px, calc(30% + 96px) 0, calc(70% - 96px) 0, 70% 28px, 100% 28px, 100% 100%, 0 100%);
+    clip-path: polygon(0 28px, 30% 28px, calc(30% + 96px) 0, calc(70% - 96px) 0, 70% 28px, 100% 28px, 100% 100%, 0 100%);
   }
 }
 

@@ -1,0 +1,17 @@
+.download{
+    background-color: white;
+    padding-bottom: 2%;
+}
+.container {
+    display: flex;
+    height: 100%;
+}
+.column {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+img {
+    max-width: 50%;
+    height: auto;
+}
