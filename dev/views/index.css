@@ -9,7 +9,7 @@
     color: white;
 }
 .bg{
-    background-image: url(/public/assets/img/Banner.jpg);
+    background-image: url(../../public/assets/img/Banner.jpg);
     background-repeat:no-repeat;
     background-size: cover;
     height: 270px;
