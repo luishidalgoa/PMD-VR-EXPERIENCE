@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="us.css" rel="stylesheet">
+    </head>
+    <body class="wrapper">
+    <header>
+        <div id="bars" class="d-flex flex-column justify-content-center">
+            <span class="d-block"
+                  style="min-width: 100%;min-height: 3px;max-width: 100%;border-radius: 9px; background-color: white;"></span>
+            <span class="d-block"
+                  style="min-width: 100%;min-height: 3px;max-width: 100%;border-radius: 9px; background-color: white; margin-top: 6px;"></span>
+            <span class="d-block"
+                  style="min-width: 100%;min-height: 3px;max-width: 100%; border-radius: 9px; background-color: white; margin-top: 6px;"></span>
+        </div>
+        <div class="img-content justify-content-center d-flex">
+            <img src="./assets/img/Unity.png" alt="" class="img-fluid p-md-3">
+        </div>
+        <nav class="d-flex">
+        </nav>
+    </header>
+
+    <div class="main">
+        <section id="about-us">
+            <div class="container">
+                <h2>Sobre Nosotros</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="team-member">
+                            <img src="" alt="">
+                            <h3>Juan Francisco Hermo López</h3>
+                            <p>Desarrollador de Aplicaciones Multiplataforma</p>
+                            <p></p>
+                            <a href="https://www.linkedin.com/in/juan-francisco-hermo-l%C3%B3pez-a88320252/" target="_blank">
+                                <img src="./assets/img/logo_linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="team-member">
+                            <img src="" alt="">
+                            <h3>Luis Hidalgo Aguilar</h3>
+                            <p>Desarrollador de Aplicaciones Multiplataforma</p>
+                            <p></p>
+                            <a href="https://www.linkedin.com/in/luis-hidalgo-aguilar-576463231/" target="_blank">
+                                <img src="./assets/img/logo_linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="team-member">
+                            <img src="" alt="">
+                            <h3>Santos Castillo</h3>
+                            <p>Desarrollador de Aplicaciones Multiplataforma</p>
+                            <p></p>
+                            <a href="https://www.linkedin.com/in/santos-castillo-2ab95115b/" target="_blank">
+                                <img src="./assets/img/logo_linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="team-member">
+                            <img src="" alt="">
+                            <h3>Alejandro Gálvez García</h3>
+                            <p>Desarrollador de Aplicaciones Multiplataforma</p>
+                            <p></p>
+                            <a href="https://www.linkedin.com/in/alejandro-g%C3%A1lvez-garc%C3%ADa/" target="_blank">
+                                <img src="./assets/img/logo_linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="d-flex justify-content-center" style="background-color: #454545">
+        <div class="footer-container">
+            <h3>Follow us:</h3>
+            <a target="_blank" href="https://github.com/luishidalgoa/PMD-VR-EXPERIENCE"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+        </div>
+    </footer>
+    </body>
+    <script src="./js/HeaderController.js"></script>
+    <script src="./js/utils.js"></script>
+    <script type="text/javascript">
+        {
+            let headerController=new HeaderController(document.querySelector('header'));
+        }
+
+
+        const homeController = new HomeController(document.getElementsByClassName('main'))
+        homeController.loadHtml();
+    </script>
+    <script src="https://kit.fontawesome.com/ee94bf2f3c.js" crossorigin="anonymous"></script>
+</html>
