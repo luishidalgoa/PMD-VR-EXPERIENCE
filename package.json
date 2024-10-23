@@ -1,0 +1,22 @@
+{
+  "name": "pmd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luishidalgoa/PMD-VR-EXPERIENCE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luishidalgoa/PMD-VR-EXPERIENCE/issues"
+  },
+  "homepage": "https://github.com/luishidalgoa/PMD-VR-EXPERIENCE#readme",
+  "dependencies": {
+    "firebase": "^11.0.1"
+  }
+}
